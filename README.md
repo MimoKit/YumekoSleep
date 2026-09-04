@@ -15,7 +15,7 @@
 </div>
 
 <div align="center">
-  <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@YumekoSleep?theme=moebooru" alt="YumekoSleep 访问计数"></a>
+  <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@YumekoSleep?theme=gelbooru" alt="YumekoSleep 访问计数"></a>
 </div>
 
 <br/>
