@@ -24,6 +24,9 @@
 cd gsuid_core/gsuid_core/plugins
 git clone https://github.com/MimoKit/YumekoSleep YumekoSleep
 ```
+```bash
+向bot发送core安装插件YumekoSleep
+```
 
 重启 GsCore 即可自动加载并初始化数据表。
 
@@ -42,12 +45,7 @@ git clone https://github.com/MimoKit/YumekoSleep YumekoSleep
 
 ## 丨功能特性
 
-- **鸣潮风格寄语**：尊称用户为漂泊者，根据入梦打卡与苏醒时长动态匹配鸣潮世界观文案。
-- **无定时器纯状态驱动**：不开启任何后台轮询计时任务，完全依托 GsCore 数据库时间戳比对计算。
-- **本地系统时间自动换算**：底层记录精确标准时间，回复自动按部署机器当前系统时区输出年月日与时分秒。
-- **同日入梦防重限制**：同一自然日内已打卡入睡的用户再次发送晚安将被拦截并提示，防止重复刷屏。
 - **表情包联动支持**：可选对接 Meme Generator 服务的 `kurogames_good_night` 表情包，使用用户高清头像生成并独立发送。
-- **Web 控制台支持**：基于 SQLModel 实现，自动在 GsCore 网页控制台注册管理面板。
 
 <br/>
 
