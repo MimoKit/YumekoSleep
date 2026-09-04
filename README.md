@@ -88,3 +88,4 @@ git clone https://github.com/MimoKit/YumekoSleep YumekoSleep
 - [GsCore (早柚核心)](https://github.com/Genshin-bots/gsuid_core)
 - [Meme-Generator](https://github.com/MeetWq/meme-generator)
 - [Wuyi 无疑](https://github.com/KimigaiiWuyi)
+- [fzmandy 伐竹猫](https://github.com/MeowAndy)
