@@ -1,0 +1,16 @@
+[project]
+name = "YumekoSleep"
+version = "0.1.0"
+description = "基于 GsCore 框架的日系鸣潮风格早晚安入梦打卡娱乐插件"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.24.0",
+]
+
+[tool.gsuid]
+name = "YumekoSleep"
+desc = "日系鸣潮风格早晚安打卡娱乐插件"
+version = "0.1.0"
+author = "MimoKit"
+icon = "ICON.png"
