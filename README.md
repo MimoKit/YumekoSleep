@@ -1,5 +1,9 @@
 # YumekoSleep
 
+<p align="center">
+  <a href="https://github.com/MimoKit/YumekoSleep"><img src="./ICON.png" width="160" alt="YumekoSleep ICON"></a>
+</p>
+
 <h1 align="center">YumekoSleep 0.1.0</h1>
 
 <h4 align="center">✨基于<a href="https://github.com/Genshin-bots/gsuid_core" target="_blank">GsCore</a>的日系鸣潮风格「入梦·苏醒」早晚安打卡娱乐插件✨</h4>
@@ -8,6 +12,10 @@
   <a href="https://docs.sayu-bot.com/" target="_blank">安装文档</a> &nbsp; · &nbsp;
   <a href="https://github.com/Genshin-bots/gsuid_core" target="_blank">gsuid_core</a> &nbsp; · &nbsp;
   <a href="https://github.com/MimoKit/YumekoSleep/issues" target="_blank">问题反馈</a>
+</div>
+
+<div align="center">
+  <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@YumekoSleep?theme=moebooru" alt="YumekoSleep 访问计数"></a>
 </div>
 
 <br/>
@@ -60,6 +68,18 @@ git clone https://github.com/MimoKit/YumekoSleep YumekoSleep
 
 > [!CAUTION]
 > 本项目仅供学习与交流使用，严禁用于任何商业用途。
+
+<br/>
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=MimoKit%2FYumekoSleep&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=MimoKit/YumekoSleep&type=date&theme=dark&legend=top-left&sealed_token=kYkSb6pkJH90d_uxGRTxHLowiWKuZa-t0m0cnPffvVAy71Y_KfjJ2LbGN0uE4m5ZFYTstQTonrMRxxwlimfwVZLNof1fhDDjUr1-4fKvVrZWTNFP2IJTuKrON1lBlIXYW-C02fNQ8k14QX0QXn_AOzxYXKDBQU2f1CIiPGkUcc-S8cojFrzKVJry3Mh3" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=MimoKit/YumekoSleep&type=date&legend=top-left&sealed_token=kYkSb6pkJH90d_uxGRTxHLowiWKuZa-t0m0cnPffvVAy71Y_KfjJ2LbGN0uE4m5ZFYTstQTonrMRxxwlimfwVZLNof1fhDDjUr1-4fKvVrZWTNFP2IJTuKrON1lBlIXYW-C02fNQ8k14QX0QXn_AOzxYXKDBQU2f1CIiPGkUcc-S8cojFrzKVJry3Mh3" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=MimoKit/YumekoSleep&type=date&legend=top-left&sealed_token=kYkSb6pkJH90d_uxGRTxHLowiWKuZa-t0m0cnPffvVAy71Y_KfjJ2LbGN0uE4m5ZFYTstQTonrMRxxwlimfwVZLNof1fhDDjUr1-4fKvVrZWTNFP2IJTuKrON1lBlIXYW-C02fNQ8k14QX0QXn_AOzxYXKDBQU2f1CIiPGkUcc-S8cojFrzKVJry3Mh3" />
+ </picture>
+</a>
 
 <br/>
 
