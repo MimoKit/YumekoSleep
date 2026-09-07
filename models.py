@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Optional
 from sqlmodel import Field, select
-from sqlalchemy import UniqueConstraint
+from sqlalchemy import UniqueConstraint, func
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from gsuid_core.server import on_core_start_before
@@ -41,6 +41,22 @@ class GoodNightRecord(BaseModel, table=True):
         )
         result = await session.execute(stmt)
         return result.scalar_one_or_none()
+
+    @classmethod
+    @with_read_session
+    async def count_other_sleeping(
+        cls, session: AsyncSession, bot_id: str, user_id: str
+    ) -> int:
+        """统计同一 Bot 下除当前用户外仍在入睡的用户数"""
+        stmt = (
+            select(func.count())
+            .select_from(cls)
+            .where(cls.bot_id == bot_id)
+            .where(cls.user_id != user_id)
+            .where(cls.is_sleeping.is_(True))
+        )
+        result = await session.execute(stmt)
+        return int(result.scalar_one() or 0)
 
     @classmethod
     @with_session

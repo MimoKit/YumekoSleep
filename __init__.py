@@ -84,10 +84,17 @@ async def handle_good_night(bot: Bot, ev: Event):
 
     await GoodNightRecord.set_sleep(bot_id, user_id, group_id, ts)
 
+    other_sleeping_count = await GoodNightRecord.count_other_sleeping(bot_id, user_id)
+    if other_sleeping_count > 0:
+        companion_text = f'此刻还有 {other_sleeping_count} 位漂泊者与你一同入梦。'
+    else:
+        companion_text = '今夜你是第一位踏入梦乡的漂泊者。'
+
     wish = random.choice(NIGHT_WISHES)
     reply_text = (
         f'晚安，漂泊者～\n'
         f'{wish}\n'
+        f'{companion_text}\n'
         f'入睡时间：{local_str}'
     )
 
