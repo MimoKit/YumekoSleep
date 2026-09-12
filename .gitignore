@@ -6,3 +6,4 @@ config.json
 .DS_Store
 .idea/
 .vscode/
+meme_cache/

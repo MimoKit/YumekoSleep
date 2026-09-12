@@ -59,8 +59,9 @@ git clone https://github.com/MimoKit/YumekoSleep YumekoSleep
 
 | 配置项 | 类型 | 默认值 | 说明 |
 |:---|:---|:---|:---|
-| `EnableMeme` | `bool` | `true` | 是否在晚安时生成并发送头像表情包 |
+| `EnableMeme` | `bool` | `false` | 是否在晚安时生成并发送头像表情包（按「用户 + 头像内容」本地缓存 3 天，换头像自动重新生成，超期自动清理） |
 | `MemeApiUrl` | `str` | `http://127.0.0.1:2235` | Meme Generator 服务的访问接口根地址 |
+| `EnableThemeWishes` | `bool` | `true` | 是否使用鸣潮风格随机寄语；关闭后晚安/早安走朴素固定文案 |
 
 <br/>
 
