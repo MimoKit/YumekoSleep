@@ -17,6 +17,7 @@ from .utils import (
     get_current_utc_and_local,
     is_same_local_day,
 )
+from .waves_stamina import send_waves_stamina_if_available
 
 LOG_PREFIX = '[梦境沉沦]'
 
@@ -195,6 +196,7 @@ async def handle_good_morning(bot: Bot, ev: Event):
         else:
             reply_text = '早上好！昨晚没有找到你的晚安打卡记录。'
         await bot.send(reply_text)
+        await send_waves_stamina_if_available(bot, ev)
         return
 
     # 情况 1：正常记录睡眠时间，早安不带表情包
@@ -231,3 +233,4 @@ async def handle_good_morning(bot: Bot, ev: Event):
         )
 
     await bot.send(reply_text)
+    await send_waves_stamina_if_available(bot, ev)

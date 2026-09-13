@@ -24,4 +24,9 @@ CONFIG_DEFAULT: Dict[str, GSC] = {
         '开启后晚安/早安使用鸣潮风格随机寄语；关闭后使用朴素固定文案。',
         True,
     ),
+    'EnableWavesStamina': GsBoolConfig(
+        '早安推送鸣潮体力',
+        '开启后若检测到XutheringWavesUID插件且用户已绑定账号，打卡早安时将额外发送其鸣潮体力图。',
+        True,
+    ),
 }

@@ -49,7 +49,7 @@ git clone https://github.com/MimoKit/YumekoSleep YumekoSleep
 | 指令 | 说明 |
 |------|------|
 | `晚安`、`睡觉啦`、`睡觉了`、`睡了`、`去睡了`、`安安`、`gn` | 记录入睡时间，发送鸣潮晚安寄语，并提示当前 Bot 下还有多少位漂泊者正在入梦；根据配置独立下发头像晚安表情包 |
-| `早安`、`起床啦`、`起床了`、`醒了`、`早呀`、`早上好`、`gm` | 计算并播报睡眠时长与鸣潮早安寄语；若昨晚未打卡则进行友好提示 |
+| `早安`、`起床啦`、`起床了`、`醒了`、`早呀`、`早上好`、`gm` | 计算并播报睡眠时长与鸣潮早安寄语；若昨晚未打卡则进行友好提示；若检测到 `XutheringWavesUID` 插件且当前用户已绑定账号，额外推送该用户的鸣潮体力图 |
 
 <br/>
 
@@ -62,6 +62,7 @@ git clone https://github.com/MimoKit/YumekoSleep YumekoSleep
 | `EnableMeme` | `bool` | `false` | 是否在晚安时生成并发送头像表情包（按「用户 + 头像内容」本地缓存 3 天，换头像自动重新生成，超期自动清理） |
 | `MemeApiUrl` | `str` | `http://127.0.0.1:2235` | Meme Generator 服务的访问接口根地址 |
 | `EnableThemeWishes` | `bool` | `true` | 是否使用鸣潮风格随机寄语；关闭后晚安/早安走朴素固定文案 |
+| `EnableWavesStamina` | `bool` | `true` | 是否在早安时自动检测 `XutheringWavesUID` 并额外推送鸣潮体力图（完全解耦，未安装或未绑定时静默跳过） |
 
 <br/>
 
