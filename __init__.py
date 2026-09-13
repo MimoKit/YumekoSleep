@@ -74,9 +74,14 @@ async def handle_good_night(bot: Bot, ev: Event):
     ts, now_utc, now_local = get_current_utc_and_local()
     local_str = format_chinese_datetime(now_local)
 
-    # 检查用户今天是否已经打卡过晚安
+    # 检查用户今天是否已经打卡过晚安且尚未醒来（醒来后允许当晚重新入睡）
     record = await GoodNightRecord.get_record(bot_id, user_id)
-    if record and record.sleep_timestamp > 0 and is_same_local_day(record.sleep_timestamp, ts):
+    if (
+        record
+        and record.sleep_timestamp > 0
+        and record.is_sleeping
+        and is_same_local_day(record.sleep_timestamp, ts)
+    ):
         last_sleep_dt = format_chinese_datetime(
             datetime.datetime.fromtimestamp(record.sleep_timestamp).astimezone()
         )
